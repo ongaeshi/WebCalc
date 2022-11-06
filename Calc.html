@@ -14,8 +14,12 @@
     }
     function calc() {
       const v = document.querySelector('input').value
-      const f = new Function('return ' + v)
-      update(f().toString())
+      try {
+        const f = new Function('return ' + v)
+        update(f().toString())
+      } catch (_error) {
+        update(_error)
+      }
     }
   </script>
 
