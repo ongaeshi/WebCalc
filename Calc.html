@@ -3,7 +3,17 @@
 <html><body>
   <div>Hello WebCalc!</div>
   <input />
-  <button onclick="document.querySelector('input').value = '1'">1</button>
-  <button onclick="document.querySelector('input').value = '2'">2</button>
-  <button onclick="document.querySelector('input').value = ''">CLR</button>
+  <script>
+    function update(_v)
+    {
+      document.querySelector('input').value = _v
+    }
+    function append(_v)
+    {
+      document.querySelector('input').value += _v
+    }
+  </script>
+  <button onclick="append('1')">1</button>
+  <button onclick="append('2')">2</button>
+  <button onclick="update('')">CLR</button>
 </body></html>
