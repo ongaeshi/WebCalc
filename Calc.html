@@ -12,8 +12,8 @@
 <body>
   <style>
     button {
-      width: 50px;
-      height: 50px;
+      width:6rem;
+      height:6rem;
     }
   </style>
 
@@ -42,46 +42,44 @@
     }
   </script>
 
-  <div class="container-fluid py-2">
-    <div class="row">
+  <div class="container-fluid py-2 bg-dark">
+    <div class="row mx-auto">
       <textarea id="input" class="form-control font-monospace" rows="3"></textarea>
     </div>
 
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col">
-        <button onclick="append( '1' )">1</button>
-        <button onclick="append( '2' )">2</button>
-        <button onclick="append( '3' )">3</button>
-        <button onclick="append( '4' )">4</button>
-        <button onclick="append( '5' )">5</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '1' )">1</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '2' )">2</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '3' )">3</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '4' )">4</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '5' )">5</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col">
-        <button onclick="append( '6' )">6</button>
-        <button onclick="append( '7' )">7</button>
-        <button onclick="append( '8' )">8</button>
-        <button onclick="append( '9' )">9</button>
-        <button onclick="append( '0' )">0</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '6' )">6</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '7' )">7</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '8' )">8</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '9' )">9</button>
+        <button class="btn btn-success rounded-circle p-0" onclick="append( '0' )">0</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col">
-        <button onclick="append( '.' )">.</button>
-        <button onclick="append( '+' )">+</button>
-        <button onclick="append( '-' )">-</button>
-        <button onclick="append( '*' )">*</button>
-        <button onclick="append( '/' )">/</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '.' )">.</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '+' )">+</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '-' )">-</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '*' )">*</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '/' )">/</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col">
-        <button onclick="append( '**' )">^</button>
-        <button onclick="sqrt()">√</button>
-
-        <button onclick="calc()">=</button>
-
-        <button onclick="update('')">CLR</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="append( '**' )">^</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="sqrt()">√</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="update('')">CLR</button>
+        <button class="btn btn-warning rounded-circle p-0" onclick="calc()">=</button>
       </div>
     </div>
 </body>
